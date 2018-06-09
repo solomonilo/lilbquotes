@@ -1,0 +1,90 @@
+html, body, .container-table {
+    height: 100%;
+}
+body{
+	background-image: url('../based_img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+h1{
+	text-align: center;
+	text-decoration: underline;
+	color: #fff;
+	font-size: 6em;
+	font-family: 'Oleo Script', cursive;
+}
+
+
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+.scaling{
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
+
+#overlay{
+    background: #fff;
+    color:#333;
+    position: fixed;
+    height: 100%;
+    width:100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 15%;
+}
